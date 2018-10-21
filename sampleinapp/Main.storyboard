@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,18 +21,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SkY-xe-sWF">
-                                <rect key="frame" x="124" y="71" width="130" height="30"/>
-                                <state key="normal" title="Products"/>
+                                <rect key="frame" x="75" y="439.5" width="225" height="30"/>
+                                <color key="backgroundColor" name="evergent_blue"/>
+                                <state key="normal" title="Launch Evergent Library">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="kN3-0v-aYh" kind="show" id="QOd-dH-hB5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Client Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCG-85-Yng">
+                                <rect key="frame" x="50" y="343.5" width="275" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SkY-xe-sWF" firstAttribute="top" secondItem="g5E-Ax-NCd" secondAttribute="top" constant="51" id="IqW-Yt-2Mv"/>
-                            <constraint firstItem="g5E-Ax-NCd" firstAttribute="trailing" secondItem="SkY-xe-sWF" secondAttribute="trailing" constant="121" id="MpG-9O-c2b"/>
-                            <constraint firstItem="SkY-xe-sWF" firstAttribute="leading" secondItem="g5E-Ax-NCd" secondAttribute="leading" constant="124" id="gxd-A7-OiB"/>
+                            <constraint firstItem="g5E-Ax-NCd" firstAttribute="trailing" secondItem="SkY-xe-sWF" secondAttribute="trailing" constant="75" id="MpG-9O-c2b"/>
+                            <constraint firstItem="g5E-Ax-NCd" firstAttribute="trailing" secondItem="lCG-85-Yng" secondAttribute="trailing" constant="50" id="XgR-tA-SYI"/>
+                            <constraint firstItem="lCG-85-Yng" firstAttribute="leading" secondItem="g5E-Ax-NCd" secondAttribute="leading" constant="50" id="Yqn-uj-Jru"/>
+                            <constraint firstItem="SkY-xe-sWF" firstAttribute="top" secondItem="lCG-85-Yng" secondAttribute="bottom" constant="75" id="ZuH-Eu-pdj"/>
+                            <constraint firstItem="SkY-xe-sWF" firstAttribute="leading" secondItem="g5E-Ax-NCd" secondAttribute="leading" constant="75" id="gxd-A7-OiB"/>
+                            <constraint firstItem="lCG-85-Yng" firstAttribute="top" secondItem="g5E-Ax-NCd" secondAttribute="centerY" id="wue-Nf-Nfn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g5E-Ax-NCd"/>
                     </view>
@@ -39,13 +53,18 @@
             </objects>
             <point key="canvasLocation" x="21.600000000000001" y="81.409295352323838"/>
         </scene>
-        <!--Main-->
+        <!--Login-->
         <scene sceneID="5uK-j5-Jh9">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" bundleIdentifier="com.evergent.evergentbilling" id="kN3-0v-aYh" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Login" bundleIdentifier="com.evergent.evergentbilling" id="kN3-0v-aYh" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LsB-6I-txH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="824" y="81"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="evergent_blue">
+            <color red="0.29399999976158142" green="0.63499999046325684" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
