@@ -13,11 +13,10 @@
 		0F0C43F7215D723C00761D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C43F5215D723C00761D07 /* LaunchScreen.storyboard */; };
 		0F0C4402215D723D00761D07 /* sampleinappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C4401215D723D00761D07 /* sampleinappTests.swift */; };
 		0F0C440D215D723D00761D07 /* sampleinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C440C215D723D00761D07 /* sampleinappUITests.swift */; };
+		0F778B992186D0BA00377A04 /* evergentbilling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F757D7A216BDD5B008EB66F /* evergentbilling.framework */; };
+		0F778B9A2186D0BA00377A04 /* evergentbilling.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F757D7A216BDD5B008EB66F /* evergentbilling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0F7A2E8C2172B80300E178F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7A2E8B2172B80300E178F3 /* Main.storyboard */; };
-		0F7A2E932172BAA100E178F3 /* evergentbilling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F757D7A216BDD5B008EB66F /* evergentbilling.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		0F7A2E942172BAA100E178F3 /* evergentbilling.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F757D7A216BDD5B008EB66F /* evergentbilling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0FDC955A217AFC1600566143 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDC9559217AFC1600566143 /* Colors.xcassets */; };
-		0FDC9566217B175C00566143 /* evergentbilling.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0F757D7A216BDD5B008EB66F /* evergentbilling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0FE0DAA8216DEB5D00299EE9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE0DAA7216DEB5D00299EE9 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,28 +49,25 @@
 			remoteGlobalIDString = 0F757D63216BDC90008EB66F;
 			remoteInfo = evergentbillingTests;
 		};
+		0F778B9B2186D0BA00377A04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F757D74216BDD5B008EB66F /* evergentbilling.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F757D59216BDC90008EB66F;
+			remoteInfo = evergentbilling;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0F7A2E972172BAA100E178F3 /* Embed Frameworks */ = {
+		0F778B9D2186D0BA00377A04 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0F7A2E942172BAA100E178F3 /* evergentbilling.framework in Embed Frameworks */,
+				0F778B9A2186D0BA00377A04 /* evergentbilling.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0FDC9565217B172800566143 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0FDC9566217B175C00566143 /* evergentbilling.framework in CopyFiles */,
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -100,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F7A2E932172BAA100E178F3 /* evergentbilling.framework in Frameworks */,
+				0F778B992186D0BA00377A04 /* evergentbilling.framework in Frameworks */,
 				0FE0DAA8216DEB5D00299EE9 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,12 +199,12 @@
 				0F0C43E5215D723A00761D07 /* Sources */,
 				0F0C43E6215D723A00761D07 /* Frameworks */,
 				0F0C43E7215D723A00761D07 /* Resources */,
-				0F7A2E972172BAA100E178F3 /* Embed Frameworks */,
-				0FDC9565217B172800566143 /* CopyFiles */,
+				0F778B9D2186D0BA00377A04 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0F778B9C2186D0BA00377A04 /* PBXTargetDependency */,
 			);
 			name = sampleinapp;
 			productName = sampleinapp;
@@ -388,6 +384,11 @@
 			isa = PBXTargetDependency;
 			target = 0F0C43E8215D723A00761D07 /* sampleinapp */;
 			targetProxy = 0F0C4409215D723D00761D07 /* PBXContainerItemProxy */;
+		};
+		0F778B9C2186D0BA00377A04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = evergentbilling;
+			targetProxy = 0F778B9B2186D0BA00377A04 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
