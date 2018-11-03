@@ -85,6 +85,7 @@
 		0F0C4408215D723D00761D07 /* sampleinappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleinappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0C440C215D723D00761D07 /* sampleinappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleinappUITests.swift; sourceTree = "<group>"; };
 		0F0C440E215D723D00761D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F280953218D11FF00FD2E23 /* sampleinapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sampleinapp.entitlements; sourceTree = "<group>"; };
 		0F757D74216BDD5B008EB66F /* evergentbilling.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = evergentbilling.xcodeproj; path = ../../evergentbilling/evergentbilling.xcodeproj; sourceTree = "<group>"; };
 		0F7A2E8B2172B80300E178F3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0FDC9559217AFC1600566143 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 		0F0C43EB215D723A00761D07 /* sampleinapp */ = {
 			isa = PBXGroup;
 			children = (
+				0F280953218D11FF00FD2E23 /* sampleinapp.entitlements */,
 				0F757D74216BDD5B008EB66F /* evergentbilling.xcodeproj */,
 				0F0C43EC215D723A00761D07 /* AppDelegate.swift */,
 				0F0C43EE215D723A00761D07 /* ViewController.swift */,
@@ -261,6 +263,9 @@
 						CreatedOnToolsVersion = 9.4;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
 								enabled = 1;
 							};
 						};
@@ -436,7 +441,9 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = sampleinapp/sampleinapp.entitlements;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Aminul Hasan (98B2R9CD5X)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -496,7 +503,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = sampleinapp/sampleinapp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Aminul Hasan (98B2R9CD5X)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -523,6 +531,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sampleinapp/sampleinapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 52B937Q7GY;
@@ -546,6 +555,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = sampleinapp/sampleinapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 52B937Q7GY;
