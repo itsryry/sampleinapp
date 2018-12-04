@@ -7,17 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F047D5821AD484B0012725E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F397B6F21AD373500817916 /* StoreKit.framework */; };
 		0F0C43ED215D723A00761D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C43EC215D723A00761D07 /* AppDelegate.swift */; };
 		0F0C43EF215D723A00761D07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C43EE215D723A00761D07 /* ViewController.swift */; };
 		0F0C43F4215D723C00761D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C43F3215D723C00761D07 /* Assets.xcassets */; };
 		0F0C43F7215D723C00761D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C43F5215D723C00761D07 /* LaunchScreen.storyboard */; };
 		0F0C4402215D723D00761D07 /* sampleinappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C4401215D723D00761D07 /* sampleinappTests.swift */; };
 		0F0C440D215D723D00761D07 /* sampleinappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C440C215D723D00761D07 /* sampleinappUITests.swift */; };
-		0F778B992186D0BA00377A04 /* evergentbilling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F757D7A216BDD5B008EB66F /* evergentbilling.framework */; };
-		0F778B9A2186D0BA00377A04 /* evergentbilling.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F757D7A216BDD5B008EB66F /* evergentbilling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F397B4B219904E100817916 /* evergentbilling.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F757D7A216BDD5B008EB66F /* evergentbilling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F3B085E21AD4F3C00E2CA0C /* cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 0F3B085D21AD4F3C00E2CA0C /* cartfile */; };
+		0F3B086621AFC19B00E2CA0C /* RxAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3B086421AD51A000E2CA0C /* RxAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F3B086721AFC19B00E2CA0C /* CodableKeychain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3B086221AD519500E2CA0C /* CodableKeychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F3B086821AFC19B00E2CA0C /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3B086021AD516900E2CA0C /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0F3B087121AFC52200E2CA0C /* evergentbilling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F757D7A216BDD5B008EB66F /* evergentbilling.framework */; };
+		0F3B087221AFC53B00E2CA0C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3B086021AD516900E2CA0C /* Alamofire.framework */; };
+		0F3B087321AFC54100E2CA0C /* CodableKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3B086221AD519500E2CA0C /* CodableKeychain.framework */; };
+		0F3B087421AFC54700E2CA0C /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3B086421AD51A000E2CA0C /* RxAlamofire.framework */; };
 		0F7A2E8C2172B80300E178F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7A2E8B2172B80300E178F3 /* Main.storyboard */; };
+		0FC49CD721AFCBFF00FF363C /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC49CD621AFCBFF00FF363C /* RxCocoa.framework */; };
+		0FC49CD821AFCC2E00FF363C /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC49CD621AFCBFF00FF363C /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0FC49CD921AFCC5300FF363C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3B087521AFC54B00E2CA0C /* RxSwift.framework */; };
+		0FC49CDA21AFCC5900FF363C /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3B087521AFC54B00E2CA0C /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0FDC955A217AFC1600566143 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FDC9559217AFC1600566143 /* Colors.xcassets */; };
-		0FE0DAA8216DEB5D00299EE9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE0DAA7216DEB5D00299EE9 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,11 +72,16 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		0F778B9D2186D0BA00377A04 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0F778B9A2186D0BA00377A04 /* evergentbilling.framework in Embed Frameworks */,
+				0FC49CDA21AFCC5900FF363C /* RxSwift.framework in Embed Frameworks */,
+				0FC49CD821AFCC2E00FF363C /* RxCocoa.framework in Embed Frameworks */,
+				0F3B086621AFC19B00E2CA0C /* RxAlamofire.framework in Embed Frameworks */,
+				0F3B086721AFC19B00E2CA0C /* CodableKeychain.framework in Embed Frameworks */,
+				0F3B086821AFC19B00E2CA0C /* Alamofire.framework in Embed Frameworks */,
+				0F397B4B219904E100817916 /* evergentbilling.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,10 +102,16 @@
 		0F0C440C215D723D00761D07 /* sampleinappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleinappUITests.swift; sourceTree = "<group>"; };
 		0F0C440E215D723D00761D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F280953218D11FF00FD2E23 /* sampleinapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = sampleinapp.entitlements; sourceTree = "<group>"; };
+		0F397B6F21AD373500817916 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0F3B085D21AD4F3C00E2CA0C /* cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = cartfile; sourceTree = "<group>"; };
+		0F3B086021AD516900E2CA0C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		0F3B086221AD519500E2CA0C /* CodableKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CodableKeychain.framework; path = Carthage/Build/iOS/CodableKeychain.framework; sourceTree = "<group>"; };
+		0F3B086421AD51A000E2CA0C /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = Carthage/Build/iOS/RxAlamofire.framework; sourceTree = "<group>"; };
+		0F3B087521AFC54B00E2CA0C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		0F757D74216BDD5B008EB66F /* evergentbilling.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = evergentbilling.xcodeproj; path = ../../evergentbilling/evergentbilling.xcodeproj; sourceTree = "<group>"; };
 		0F7A2E8B2172B80300E178F3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0FC49CD621AFCBFF00FF363C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		0FDC9559217AFC1600566143 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		0FE0DAA7216DEB5D00299EE9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +119,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F778B992186D0BA00377A04 /* evergentbilling.framework in Frameworks */,
-				0FE0DAA8216DEB5D00299EE9 /* StoreKit.framework in Frameworks */,
+				0F047D5821AD484B0012725E /* StoreKit.framework in Frameworks */,
+				0F3B087421AFC54700E2CA0C /* RxAlamofire.framework in Frameworks */,
+				0F3B087321AFC54100E2CA0C /* CodableKeychain.framework in Frameworks */,
+				0FC49CD921AFCC5300FF363C /* RxSwift.framework in Frameworks */,
+				0FC49CD721AFCBFF00FF363C /* RxCocoa.framework in Frameworks */,
+				0F3B087121AFC52200E2CA0C /* evergentbilling.framework in Frameworks */,
+				0F3B087221AFC53B00E2CA0C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +149,7 @@
 		0F0C43E0215D723A00761D07 = {
 			isa = PBXGroup;
 			children = (
+				0F3B085D21AD4F3C00E2CA0C /* cartfile */,
 				0F0C43EB215D723A00761D07 /* sampleinapp */,
 				0F0C4400215D723D00761D07 /* sampleinappTests */,
 				0F0C440B215D723D00761D07 /* sampleinappUITests */,
@@ -186,7 +214,12 @@
 		0FE0DAA0216DEA6C00299EE9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0FE0DAA7216DEB5D00299EE9 /* StoreKit.framework */,
+				0FC49CD621AFCBFF00FF363C /* RxCocoa.framework */,
+				0F3B087521AFC54B00E2CA0C /* RxSwift.framework */,
+				0F3B086421AD51A000E2CA0C /* RxAlamofire.framework */,
+				0F3B086221AD519500E2CA0C /* CodableKeychain.framework */,
+				0F3B086021AD516900E2CA0C /* Alamofire.framework */,
+				0F397B6F21AD373500817916 /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,6 +235,7 @@
 				0F0C43E6215D723A00761D07 /* Frameworks */,
 				0F0C43E7215D723A00761D07 /* Resources */,
 				0F778B9D2186D0BA00377A04 /* Embed Frameworks */,
+				0F3B085F21AD4F7700E2CA0C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -261,6 +295,7 @@
 				TargetAttributes = {
 					0F0C43E8215D723A00761D07 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1010;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 1;
@@ -272,10 +307,12 @@
 					};
 					0F0C43FC215D723C00761D07 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1010;
 						TestTargetID = 0F0C43E8215D723A00761D07;
 					};
 					0F0C4407215D723D00761D07 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1010;
 						TestTargetID = 0F0C43E8215D723A00761D07;
 					};
 				};
@@ -332,6 +369,7 @@
 				0FDC955A217AFC1600566143 /* Colors.xcassets in Resources */,
 				0F0C43F7215D723C00761D07 /* LaunchScreen.storyboard in Resources */,
 				0F0C43F4215D723C00761D07 /* Assets.xcassets in Resources */,
+				0F3B085E21AD4F3C00E2CA0C /* cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +388,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F3B085F21AD4F7700E2CA0C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAlamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CodableKeychain.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0F0C43E5215D723A00761D07 /* Sources */ = {
@@ -446,6 +509,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Aminul Hasan (98B2R9CD5X)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -507,6 +571,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Aminul Hasan (98B2R9CD5X)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -535,17 +600,27 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 52B937Q7GY;
+				DYLIB_INSTALL_NAME_BASE = "$(inherited) @executable_path/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = sampleinapp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.evergent.sampleinapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4c08d2ca-3506-4431-9e7e-0b802c944d9c";
 				PROVISIONING_PROFILE_SPECIFIER = "Aminul Hasan";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -559,17 +634,30 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 52B937Q7GY;
+				DYLIB_INSTALL_NAME_BASE = "$(inherited) @executable_path/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = sampleinapp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.evergent.sampleinapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "4c08d2ca-3506-4431-9e7e-0b802c944d9c";
 				PROVISIONING_PROFILE_SPECIFIER = "Aminul Hasan";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -579,6 +667,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z7EAZWK96N;
 				INFOPLIST_FILE = sampleinappTests/Info.plist;
@@ -589,7 +678,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.evergent.sampleinappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sampleinapp.app/sampleinapp";
 			};
@@ -600,6 +689,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z7EAZWK96N;
 				INFOPLIST_FILE = sampleinappTests/Info.plist;
@@ -610,7 +700,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.evergent.sampleinappTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sampleinapp.app/sampleinapp";
 			};
@@ -620,6 +710,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z7EAZWK96N;
 				INFOPLIST_FILE = sampleinappUITests/Info.plist;
@@ -627,10 +718,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.evergent.sampleinappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = sampleinapp;
 			};
@@ -640,6 +732,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z7EAZWK96N;
 				INFOPLIST_FILE = sampleinappUITests/Info.plist;
@@ -647,10 +740,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.evergent.sampleinappUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = sampleinapp;
 			};

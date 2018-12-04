@@ -1,0 +1,2 @@
+github "RxSwiftCommunity/RxAlamofire" "master"
+github "toddkramer/CodableKeychain" ~> 0.8.1
